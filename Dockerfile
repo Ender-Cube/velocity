@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:17-jdk
 
 LABEL org.opencontainers.image.vendor="Dockcenter"
 LABEL org.opencontainers.image.title="Velocity"
