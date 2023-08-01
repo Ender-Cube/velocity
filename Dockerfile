@@ -1,4 +1,4 @@
-FROM amazoncorretto-17-alpine-jdk
+FROM amazoncorretto:17-alpine-jdk
 
 LABEL org.opencontainers.image.vendor="Zax71"
 LABEL org.opencontainers.image.title="Velocity"
