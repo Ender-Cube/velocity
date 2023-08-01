@@ -1,10 +1,10 @@
 FROM eclipse-temurin:17-jdk
 
-LABEL org.opencontainers.image.vendor="Dockcenter"
+LABEL org.opencontainers.image.vendor="Zax71"
 LABEL org.opencontainers.image.title="Velocity"
-LABEL org.opencontainers.image.description="Automatically built Docker image for Velocity"
-LABEL org.opencontainers.image.documentation="https://github.com/dockcenter/velocity/blob/main/README.md"
-LABEL org.opencontainers.image.authors="Chao Tzu-Hsien <danny900714@gmail.com>"
+LABEL org.opencontainers.image.description="Automatically built Docker image for Velocity with arm support"
+LABEL org.opencontainers.image.documentation="https://github.com/Ender-Cube/velocity/blob/main/README.md"
+LABEL org.opencontainers.image.authors="Chao Tzu-Hsien <danny900714@gmail.com> Zax71"
 LABEL org.opencontainers.image.licenses="MIT"
 
 ENV JAVA_MEMORY="512M"
