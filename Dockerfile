@@ -17,12 +17,14 @@ RUN apk add --upgrade --no-cache openssl && \
     adduser -S velocity -G velocity && \
     chown velocity:velocity /data
 
-USER velocity
+# USER velocity
 
 VOLUME /data
 
 EXPOSE 25577
 
-COPY --chown=velocity velocity/velocity-*.jar /opt/velocity/velocity.jar
+# COPY --chown=velocity velocity/velocity-*.jar /opt/velocity/velocity.jar
+
+COPY velocity/velocity-*.jar /opt/velocity/velocity.jar
 
 ENTRYPOINT java -Xms$JAVA_MEMORY -Xmx$JAVA_MEMORY $JAVA_FLAGS -jar /opt/velocity/velocity.jar
