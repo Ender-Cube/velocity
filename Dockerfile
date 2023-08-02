@@ -20,6 +20,6 @@ VOLUME /data
 
 EXPOSE 25577
 
-COPY --chown=velocity --chmod 744 velocity/velocity-*.jar /opt/velocity/velocity.jar
+COPY --chown=velocity --chmod=744 velocity/velocity-*.jar /opt/velocity/velocity.jar
 
 ENTRYPOINT java -Xms$JAVA_MEMORY -Xmx$JAVA_MEMORY $JAVA_FLAGS -jar /opt/velocity/velocity.jar
